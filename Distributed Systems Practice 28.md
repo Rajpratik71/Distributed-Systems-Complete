@@ -128,7 +128,7 @@ Simple Storage Service (S3) is storage service provided by Amazon which in highl
 ### [Building a modern web application:](https://aws.amazon.com/getting-started/projects/build-modern-app-fargate-lambda-dynamodb-python/?trk=gs_card) (150 min)
 -	We will be creating a web application using several different services of AWS, where application will be hosted on frontend web server and it will be connected to backend database
 -	Create environment with Cloud9 AWS service by the name “MythicalMysfitsIDE” with default settings
--	Clone the Mythical Mysfits workshop repository with command `git clone https://github.com/aws-samples/aws-modern-application-workshop.git` and change directory to “aws-modern-application-workshop”
+-	Clone the Mythical Mysfits workshop repository with command `git clone --depth 1 https://github.com/aws-samples/aws-modern-application-workshop.git` and change directory to “aws-modern-application-workshop”
 -	Create an S3 bucket with CLI command `aws s3 mb s3://mythical-mysfits-bucket-name` and configure it with `aws s3 website s3://YOUR_BUCKET_NAME --index-document index.html` command
 -	By default, buckets are private and we need to change the policy to public with command `aws s3api put-bucket-policy --bucket mythical-mysfits-bucket-name --policy file://~/environment/aws-modern-application-workshop/module-1/aws-cli/website-bucket-policy.json`
 -	Now we need to add content to S3 bucket using command `aws s3 cp ~/environment/aws-modern-application-workshop/module-1/web/index.html s3://REPLACE_ME_BUCKET_NAME/index.html `
@@ -161,7 +161,7 @@ git config --global user.email REPLACE_ME_WITH_YOUR_EMAIL@example.com
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 cd ~/environment/
-git clone https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
+git clone --depth 1 https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
 cp -r ~/environment/aws-modern-application-workshop/module-2/app/* ~/environment/MythicalMysfitsService-Repository/
 
 ```
@@ -247,7 +247,7 @@ There has been shifts thought the era of computers and in future we are more lik
 ### [Docker Intro:]( https://training.play-with-docker.com/beginner-linux/) (30 min)
 
 -	This tutorial video will guide on how to use simple docker command and build-ship-run workflow
--	`git clone https://github.com/dockersamples/linux_tweet_app` command will clone  a repository which we will be using later in the tutorial
+-	`git clone --depth 1 https://github.com/dockersamples/linux_tweet_app` command will clone  a repository which we will be using later in the tutorial
 -	`docker container run alpine hostname` will run hostname command inside alpine container
 -	`docker container ls --all` will list all containers 
 -	We can run ubuntu container inside alpine linux docker using `docker container run --interactive --tty --rm ubuntu bash` command which will also open interactive mode

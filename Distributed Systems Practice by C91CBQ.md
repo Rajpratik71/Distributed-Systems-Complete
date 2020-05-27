@@ -675,7 +675,7 @@ ____
         ```
         aws codecommit create-repository --repository-name MythicalMysfitsStreamingService-Repository
         cd ~/environment/
-        git clone {insert the copied cloneValueUrl from above}
+        git clone --depth 1 {insert the copied cloneValueUrl from above}
         cd ~/environment/MythicalMysfitsStreamingService-Repository/
         cp -r ~/environment/aws-modern-application-workshop/module-5/app/streaming/* .
         cp ~/environment/aws-modern-application-workshop/module-5/cfn/* .

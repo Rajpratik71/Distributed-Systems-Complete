@@ -47,7 +47,7 @@ linked to the microservices, and ALB routes requests to them according to pre-de
 - Clone demo from Github
 
 ```
-git clone https://github.com/awslabs/amazon-ecs-nodejs-microservices.git
+git clone --depth 1 https://github.com/awslabs/amazon-ecs-nodejs-microservices.git
 ```
 
 - Create ECS repository _api_ in ECS console

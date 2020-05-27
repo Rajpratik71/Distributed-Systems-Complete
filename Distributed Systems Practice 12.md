@@ -373,7 +373,7 @@ There are four sections included--1) Containerize the application, 2) deploy the
 
     * Install dependencies and get application source
 
-        We need to install awscli and docker where we work. There is not much to talk about installation and git clone provided project.
+        We need to install awscli and docker where we work. There is not much to talk about installation and git clone --depth 1 provided project.
 
         ![Install wheel](./screenshots/docker-fianl/installation.png)
 

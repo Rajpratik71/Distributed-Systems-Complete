@@ -408,7 +408,7 @@ But when looking at custom Hello image, we can see three layers in our applicati
   * As you can see, only the first manager is the leader and there are a bunch of managers(also can be worker) and workers(can not be manager unless explicitly promoted). They both run service containers and manager nodes can coordinate the cluster quorum. All docker stack and docker service commands must be run from a manager node.
 
 * Clone the Voting App
-  * use git clone ```git clone https://github.com/docker/example-voting-app``` to get the voting app material.
+  * use git clone --depth 1 ```git clone --depth 1 https://github.com/docker/example-voting-app``` to get the voting app material.
   * go to it's directory by ```cd example-voting-app```
 
 * Deploy a Stack

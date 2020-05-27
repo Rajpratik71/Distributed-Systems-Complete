@@ -47,7 +47,7 @@ called __tasks__ and then all the tasks & services together make up a stack.
 - Clone demo repository on manager node
 
 ```bash
-git clone https://github.com/docker/example-voting-app
+git clone --depth 1 https://github.com/docker/example-voting-app
 cd example-voting-app
 ```
 

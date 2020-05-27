@@ -5,7 +5,7 @@
 >> In Cloud9, we can implement linux command
 - Clone The Mythical Mysfits Workshop Repository
 ```
-git clone -b python https://github.com/aws-samples/aws-modern-application-workshop.git
+git clone --depth 1 -b python https://github.com/aws-samples/aws-modern-application-workshop.git
 cd aws-modern-application-workshop
 ```
 - Create An S3 Bucket And Configure It for Website Hosting
@@ -115,7 +115,7 @@ git config --global user.email REPLACE_ME_WITH_YOUR_EMAIL@example.com
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 cd ~/environment/
-git clone https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
+git clone --depth 1 https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
 cp -r ~/environment/aws-modern-application-workshop/module-2/app/* ~/environment/MythicalMysfitsService-Repository/
 ```
 ![avatar](image/6-7.png)
@@ -191,7 +191,7 @@ aws s3 cp --recursive ~/environment/aws-modern-application-workshop/module-4/web
 ```
 aws codecommit create-repository --repository-name MythicalMysfitsStreamingService-Repository
 cd ~/environment/
-git clone {insert the copied cloneValueUrl from above}
+git clone --depth 1 {insert the copied cloneValueUrl from above}
 ```
 - Copy The Streaming Service Code Base
 ```
