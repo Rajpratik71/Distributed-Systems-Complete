@@ -681,7 +681,7 @@ __Time: 70min__
 
     * In the bottom panel terminal, run the command to clone the necessary code:
 
-            git clone https://github.com/aws-samples/aws-modern-application-workshop.git
+            git clone --depth 1 https://github.com/aws-samples/aws-modern-application-workshop.git
 
     * Navigate to cloned repository directory:
 
@@ -814,7 +814,7 @@ __Time: 70min__
     * Then clone the repository:
 
             cd ~/environment/
-            git clone https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
+            git clone --depth 1 https://git-codecommit.REPLACE_REGION.amazonaws.com/v1/repos/MythicalMysfitsService-Repository
 
     * Then copy the application files into the repository directory using the following command:
 
@@ -919,7 +919,7 @@ __Time: 70min__
 
             aws codecommit create-repository --repository-name MythicalMysfitsStreamingService-Repository
             cd ~/environment/
-            git clone https://git-codecommit.REPLACE_ME_REGION.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository
+            git clone --depth 1 https://git-codecommit.REPLACE_ME_REGION.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository
 
     * Copy the streaming service code base:
 

@@ -27,7 +27,7 @@ and how to use "bind mount" to map a host directory inside container.
 - Clone the demo git repository
 
 ```bash
-git clone https://github.com/dockersamples/linux_tweet_app
+git clone --depth 1 https://github.com/dockersamples/linux_tweet_app
 ```
 
 - Export an environment variable containing your DockerID

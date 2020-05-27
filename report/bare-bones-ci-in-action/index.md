@@ -181,7 +181,7 @@ git init --bare demo.git
 - Try to pull the repository on client
 
 ```bash
-git clone ec2-user@ec2-35-173-196-232.compute-1.amazonaws.com:demo.git demo
+git clone --depth 1 ec2-user@ec2-35-173-196-232.compute-1.amazonaws.com:demo.git demo
 
 Cloning into 'demo'...
 warning: You appear to have cloned an empty repository.

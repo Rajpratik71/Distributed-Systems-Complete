@@ -64,7 +64,7 @@ in Container: the docker engine in operating system, operating system dependenci
 
 -Lab: Docker Intro(https://training.play-with-docker.com/beginner-linux/)(1hour)  
 know how to clone a repo from github in docker.  
-git clone https://github.com/dockersamples/linux_tweet_app  
+git clone --depth 1 https://github.com/dockersamples/linux_tweet_app  
 command to clone the lab’s repo from GitHub (you can click the command or manually type it).  
 This will make a copy of the lab’s repo in a new sub-directory called linux_tweet_app
 know how to run a single task, interactive ubuntu container and background mysql container in Alpine Linux container.  
